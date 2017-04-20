@@ -6,7 +6,7 @@ const addToTotal = (state=initialState, action) => {
     switch (action.type){
         case 'ADD':
             return {
-                value: action.value + state.value
+                value: Number.parseInt(state.value)+Number.parseInt(action.value)
             }
         default: return state
     }
