@@ -19,7 +19,7 @@ let AddTotoalForm = ({ dispatch }) => {
                     input=node
                 }} />
                 <button type="submit">
-                    Add Todo
+                    Add To Total
                 </button>
             </form>
         </div>
