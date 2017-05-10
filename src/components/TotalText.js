@@ -1,8 +1,8 @@
 import React from 'react'
 
-const TotalText = ({value,ownProps}) => (
+let TotalText = (state) => (
     <span>
-        Your total kilometers is : {value}
+        Your total kilometers is : {state.value}
     </span>
 )
 

@@ -1,11 +1,11 @@
 import React from 'react'
-import AddTotoalForm from '../containers/AddTotoalForm'
+import AddTotalFormContainer from '../containers/AddTotalFormContainer'
 import TotalConn from '../containers/TotalConn'
 
 
 const App = () => (
     <div>
-        <AddTotoalForm />
+        <AddTotalFormContainer />
         <TotalConn />
     </div>
 )

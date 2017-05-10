@@ -4,3 +4,9 @@ export default function addToTotal(value){
         value
     }
 }
+
+export function clearTotal(){
+    return {
+        type: "CLEAR"
+    }
+}

@@ -1,14 +1,9 @@
 
 import { connect } from 'react-redux'
 import TotalText from '../components/TotalText'
-import * as action from '../actions'
 
-const mapStateToProps = (state) => {
-    return {
-        value: state.value
-    }
-}
+const mapStateToProps = (state) => state
 
-const TotalConn = connect (mapStateToProps,action)(TotalText)
+const TotalConn = connect (mapStateToProps)(TotalText)
 
 export default TotalConn;
