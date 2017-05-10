@@ -1,23 +1,26 @@
 import { connect } from 'react-redux'
-import addToTotal,{clearTotal} from '../actions'
-import AddToTotalForm from '../components/AddToTotalForm'
+import addToTotal,{clearTotal,addToTable} from '../actions'
+import FormAndTable from '../components/FormAndTable'
 
-const mapStateToProps = (state) => state
+const mapStateToProps = (state) => {
+    return state
+}
 
 
 const mapDispatchToProps = (dispatch) => {
     return {
         addToTotal: (input) => {
             dispatch(addToTotal(input))
+            dispatch(addToTable(input))
         },
         clearTotal: () => {
             dispatch(clearTotal())
         },
     }
 }
-const TotalRecordForm = connect(
+const FormAndTableContainer = connect(
     mapStateToProps,
     mapDispatchToProps,
-)(AddToTotalForm)
+)(FormAndTable)
 
-export default TotalRecordForm
+export default FormAndTableContainer

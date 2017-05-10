@@ -5,6 +5,7 @@ import React from 'react'
 
 const AddToTotalForm = (props) => {
     let input
+    let propsValue =props.props
 
     return (
         <div>
@@ -13,7 +14,7 @@ const AddToTotalForm = (props) => {
                 if (!input.value.trim()) {
                     return
                 }
-                props.addToTotal(input.value)
+                propsValue.addToTotal(input.value)
                 input.value=''
             }}>
                 <input ref={node=>{
@@ -22,7 +23,7 @@ const AddToTotalForm = (props) => {
                 <button type="submit">
                     Add To Total
                 </button>{' '}
-                <button onClick={()=>props.clearTotal()}>
+                <button onClick={()=>propsValue.clearTotal()}>
                     Clear record
                 </button>
             </form>
