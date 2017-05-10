@@ -3,7 +3,6 @@ const initialState = {
 };
 
 const addToTotal = (state=initialState, action) => {
-    console.log('aaaa',action.type)
     switch (action.type){
         case 'ADD':
             return {
