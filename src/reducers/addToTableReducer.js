@@ -17,6 +17,8 @@ const addToTable = (state = [], action)=>{
                 ...state,
                 stackUpTable(undefined, action)
             ]
+        case 'CLEAR':
+            return []
         default: return state
     }
 }
