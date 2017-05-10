@@ -3,7 +3,7 @@
  */
 import React from 'react'
 
-let AddToTotalForm = (props) => {
+const AddToTotalForm = (props) => {
     let input
 
     return (

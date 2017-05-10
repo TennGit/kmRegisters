@@ -4,6 +4,6 @@ import TotalText from '../components/TotalText'
 
 const mapStateToProps = (state) => state
 
-const TotalConn = connect (mapStateToProps)(TotalText)
+const TotalTextContainer = connect (mapStateToProps)(TotalText)
 
-export default TotalConn;
+export default TotalTextContainer;

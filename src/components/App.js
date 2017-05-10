@@ -1,12 +1,14 @@
 import React from 'react'
 import AddTotalFormContainer from '../containers/AddTotalFormContainer'
-import TotalConn from '../containers/TotalConn'
+import TotalTextContainer from '../containers/TotalTextContainer'
+import RecordsTableContainer from '../containers/RecordsTableContainer'
 
 
 const App = () => (
     <div>
         <AddTotalFormContainer />
-        <TotalConn />
+        <TotalTextContainer />
+        <RecordsTableContainer />
     </div>
 )
 
