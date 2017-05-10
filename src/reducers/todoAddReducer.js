@@ -15,7 +15,8 @@ const addToTotal = (state=initialState, action) => {
             }
         case 'CLEAR':
             return {
-                value: 0
+                value: 0,
+                date: "current"
             }
         default: return state
     }
