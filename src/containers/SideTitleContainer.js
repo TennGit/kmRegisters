@@ -4,7 +4,6 @@ import SideTitleComponent from "../components/SideTitleComponent";
 
 
 const mapStateToProps = (state) => {
-    console.log(state)
     return state
 }
 

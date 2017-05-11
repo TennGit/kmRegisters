@@ -18,7 +18,6 @@ const fetchSideTitleReducer = (state=initialState, action) => {
                 title: 'Loading...'
             }
         case 'LOAD_SIDE_TEXT_FULFILLED':
-            console.log('fulfilled:', action.payload)
             return {
                 hasError: false,
                 loading: false,
