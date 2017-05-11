@@ -1,19 +1,26 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 
 import App from './components/App'
 import rootReducer from './reducers/rootReducer'
+import {BrowserRouter as Router} from 'react-router-dom'
+import promise from "redux-promise-middleware";
+import axios from 'axios';
 
-const store = createStore(
-    rootReducer,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const store = createStore(rootReducer, applyMiddleware(promise()));
+
+store.dispatch({
+    type:"LOAD_SIDE_TEXT",
+    payload:axios.get('https://jsonplaceholder.typicode.com/posts/1')
+})
 
 render(
   <Provider store={store}>
-    <App />
+      <Router>
+          <App />
+      </Router>
   </Provider>,
   document.getElementById('root')
 );

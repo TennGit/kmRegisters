@@ -9,8 +9,6 @@ const stackUpTable = (state={}, action) => {
 }
 
 const addToTable = (state = [], action)=>{
-    console.log("action")
-    console.log(action)
     switch (action.type){
         case 'ADD_TO_TABLE':
             return [

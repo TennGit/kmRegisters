@@ -4,8 +4,6 @@ const initialTotalState = {
 };
 
 const addToTotal = (state=initialTotalState, action) => {
-    console.log("all state")
-    console.log(state)
     switch (action.type){
         case 'ADD':
             return {
