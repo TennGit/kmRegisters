@@ -6,9 +6,9 @@ import SideTitleContainer from '../containers/SideTitleContainer'
 
 const App = () => (
     <div>
+        <SideTitleContainer />
         <TotalTextContainer />
         <FormAndTableContainer />
-        <SideTitleContainer />
     </div>
 )
 
